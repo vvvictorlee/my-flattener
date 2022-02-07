@@ -33,7 +33,7 @@ contract ERC721Controlled is ERC721PresetMinterPauserAutoIdUpgradeable {
   }
 
     function _beforeTokenTransfer(address from, address to, uint256 tokenId) internal virtual override(ERC721PresetMinterPauserAutoIdUpgradeable) {
-        require(totalSupply()<10, "Max Total Supply is 150000 ");
+        require(totalSupply()<10, "Max Total Supply is 10 ");
         super._beforeTokenTransfer(from, to, tokenId);
     }
 
